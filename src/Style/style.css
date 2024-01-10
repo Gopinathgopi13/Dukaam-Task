@@ -1,0 +1,169 @@
+:root {
+  --dukaan-blue-800: #1e2640;
+  --dukaan-blue-600: #0e4f82;
+  --dukaan-blue-400: #146eb4;
+
+  --dukaan-gray-800: #4d4d4d;
+  --dukaan-gray-700: #3f3f46;
+  --dukaan-gray-600: #71717a;
+  --dukaan-gray-300: #ccc;
+  --dukaan-gray-200: #dfdddd;
+  --dukaan-gray-100: #f7f7f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Gelano";
+  src: url(/fonts/GalanoGrotesqueDEMO-Bold.ttf);
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background-color: white;
+}
+
+.main {
+  display: flex;
+}
+
+aside {
+  position: sticky;
+  inset: 0;
+  width: 224px;
+  background-color: var(--dukaan-blue-800);
+  height: 100dvh;
+  color: var(--dukaan-gray-300);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar .user {
+  padding: 16px 16px 20px 16px;
+  display: flex;
+  gap: 12px;
+}
+
+.user .user_logo img {
+  border-radius: 4px;
+  height: 40px;
+  width: 40px;
+}
+
+.user .user_details .name {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: white;
+}
+
+.user .user_details .store {
+  font-size: 13px;
+  text-decoration: underline;
+  color: var(--dukaan-gray-300);
+}
+
+.user .user_details .store:hover {
+  font-size: 13px;
+  text-decoration: underline;
+  color: white;
+}
+
+.user .user_dropdown{
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  color: #dfdddd;
+}
+.menu {
+  padding: 8px;
+  list-style: none;
+  flex: 1;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.menu-active {
+  background-color: #ffffff0d;
+  color: white;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+  background-color: #ffffff0d;
+}
+
+.credits {
+  margin-top: auto;
+  margin-bottom: 20px;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 6px 16px;
+  display: flex;
+  gap: 12px;
+  background-color: #ffffff0d;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.credits_details {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.credits_details .balance {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.payouts {
+  flex: 1 1 0;
+  overflow: auto;
+}
+/* Payouts Section */
+
+.payouts {
+  background-color: var(--dukaan-gray-100);
+}
+
+
+/* SVGS*/
+.svg-search-icon {
+  color: var(--dukaan-gray-600);
+  margin-top: 2px;
+}
+
+.svg-hamburger-icon {
+  stroke-width: 2.5px;
+}
+
+.svg-chevron-down-icon {
+  stroke-width: 3px;
+}
+
+.svg-chevron-right-icon {
+  stroke-width: 4px;
+}
+
+.svg-download-tray-icon {
+  height: 22px;
+  width: 22px;
+}
